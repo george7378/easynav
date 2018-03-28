@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">EasyNav</string>
+    <string name="empty_field">--</string>
+
+    <string name="label_distance">Distance</string>
+    <string name="label_latlon">Lat/Lon</string>
+    <string name="label_altoffset">Altitude offset</string>
+    <string name="label_altwgs">Altitude WGS84</string>
+    <string name="alert_permswarning">Permissions warning</string>
+    <string name="alert_permswarning_msg">Please ensure the app has location permissions enabled.\nIf you have just enabled them, please restart the app.</string>
+    <string name="bezel_img_description">Compass bezel to show bearing to current waypoint.</string>
+    <string name="append_above">" above"</string>
+    <string name="append_below">" below"</string>
+    <string name="button_waypoints">Waypoints</string>
+    <string name="button_settings">Settings</string>
+
+    <string name="hint_wptname">Waypoint name</string>
+    <string name="hint_wptlat">Latitude (degrees)</string>
+    <string name="hint_wptlon">Longitude (degrees)</string>
+    <string name="alert_saveerror_waypoint">Unable to save waypoint</string>
+    <string name="alert_saveerror_content_msg">All fields must have content.</string>
+    <string name="alert_saveerror_latitude_msg">Latitude must be between +/- 90 degrees.</string>
+    <string name="alert_saveerror_longitude_msg">Longitude must be between +/- 180 degrees.</string>
+    <string name="alert_saveerror_name_msg">Name must be unique.</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+
+    <string name="label_updatefreq">Update frequency</string>
+    <string name="label_metricunits">Metric units</string>
+    <string name="label_updatefreq_detail">How often location refreshes, in seconds</string>
+    <string name="label_metricunits_detail">Tick for Metric units throughout app, untick for Imperial</string>
+    <string name="alert_saveerror_settings">Unable to save settings</string>
+    <string name="alert_saveerror_updatefreq_msg">Update frequency must be between 1 and 60 seconds.</string>
+    <string name="button_return">Return</string>
+
+    <string name="label_savedwpts">Saved waypoints</string>
+    <string name="label_activewpt">Active waypoint</string>
+    <string name="alert_waypoint_info">"Information for "</string>
+    <string name="heading_latitude_colon">"Latitude: "</string>
+    <string name="heading_longitude_colon">"Longitude: "</string>
+    <string name="heading_altitude_colon">"Altitude: "</string>
+    <string name="append_degrees_shorthand">" deg"</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_activate">Activate</string>
+    <string name="button_newwpt">New waypoint</string>
+</resources>

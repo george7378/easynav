@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_background" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="kristianseng.easynav.WaypointsActivity"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_savedwpts"
+                android:id="@+id/savedWaypointsLabelTextView"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_container"
+                android:layout_below="@+id/savedWaypointsLabelTextView"
+                android:id="@+id/savedWaypointsFrameLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp">
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/savedWaypointsSpinner"
+                    android:spinnerMode="dialog"
+                    android:padding="10dp"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/savedWaypointActionsFrameLayout"
+                android:layout_below="@+id/savedWaypointsFrameLayout"
+                android:layout_marginBottom="30dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_delete"
+                    android:id="@+id/waypointDeleteButton"
+                    android:background="@drawable/app_container"
+                    android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+                    android:drawablePadding="5dp"
+                    android:textColor="@drawable/app_button_text"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="5dp"
+                    android:onClick="onClickDelete"
+                    android:layout_gravity="left|center_vertical" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_activate"
+                    android:id="@+id/waypointActivateButton"
+                    android:background="@drawable/app_container"
+                    android:drawableLeft="@android:drawable/ic_menu_send"
+                    android:drawablePadding="5dp"
+                    android:textColor="@drawable/app_button_text"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="5dp"
+                    android:onClick="onClickActivate"
+                    android:layout_gravity="right|center_vertical" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_activewpt"
+                android:id="@+id/activeWaypointLabelTextView"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                android:layout_below="@+id/savedWaypointActionsFrameLayout" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_container"
+                android:padding="5dp"
+                android:layout_below="@+id/activeWaypointLabelTextView"
+                android:id="@+id/activeWaypointFrameLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:clickable="true"
+                android:onClick="onClickActiveWaypoint">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activeWaypointValueTextView"
+                    android:textColor="@color/colorHighlight"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:text="@string/empty_field" />
+            </FrameLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_newwpt"
+                android:id="@+id/waypointNewButton"
+                android:background="@drawable/app_container"
+                android:drawableLeft="@android:drawable/ic_menu_edit"
+                android:drawablePadding="5dp"
+                android:textColor="@drawable/app_button_text"
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:onClick="onClickNew"
+                android:layout_below="@+id/activeWaypointFrameLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_return"
+                android:id="@+id/waypointsReturnButton"
+                android:background="@drawable/app_container"
+                android:drawableLeft="@android:drawable/ic_menu_revert"
+                android:drawablePadding="5dp"
+                android:textColor="@drawable/app_button_text"
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:onClick="onClickReturn"
+                android:layout_below="@+id/waypointNewButton"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

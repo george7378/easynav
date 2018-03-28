@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_background" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="kristianseng.easynav.NewWaypointActivity"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameEditText"
+                android:textColor="@color/colorHighlight"
+                android:padding="15dp"
+                android:hint="@string/hint_wptname"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_below="@+id/nameEditText"
+                android:id="@+id/latEditText"
+                android:textColor="@color/colorHighlight"
+                android:padding="15dp"
+                android:hint="@string/hint_wptlat"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_below="@+id/latEditText"
+                android:id="@+id/lonEditText"
+                android:textColor="@color/colorHighlight"
+                android:padding="15dp"
+                android:hint="@string/hint_wptlon"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_below="@+id/lonEditText"
+                android:id="@+id/altEditText"
+                android:textColor="@color/colorHighlight"
+                android:padding="15dp"
+                android:hint="@string/label_altwgs"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginBottom="50dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_save"
+                android:id="@+id/saveNewWaypointButton"
+                android:background="@drawable/app_container"
+                android:drawableLeft="@android:drawable/ic_menu_edit"
+                android:drawablePadding="5dp"
+                android:textColor="@drawable/app_button_text"
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:onClick="onClickSave"
+                android:layout_below="@+id/altEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_cancel"
+                android:id="@+id/cancelNewWaypointButton"
+                android:background="@drawable/app_container"
+                android:drawableLeft="@android:drawable/ic_menu_revert"
+                android:drawablePadding="5dp"
+                android:textColor="@drawable/app_button_text"
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:onClick="onClickCancel"
+                android:layout_below="@+id/saveNewWaypointButton"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
