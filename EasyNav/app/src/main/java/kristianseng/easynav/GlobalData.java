@@ -1,8 +1,8 @@
 package kristianseng.easynav;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.support.v7.app.AlertDialog;
 
 import java.text.DecimalFormat;
 
