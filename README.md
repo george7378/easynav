@@ -1,5 +1,6 @@
 # easynav
 > Released Android app is [available here](https://play.google.com/store/apps/details?id=kristianseng.easynav).
+> This repository contains the code from the original version (v1.x.x - first released in 2016) and may not reflect the released app.
 
 EasyNav is a GPS navigation tool for Android which aims to make it as simple as possible to find your way to any location on Earth, defined by you. It provides self-contained navigation which requires GPS connectivity only - there's no need to be online to download maps or local information because EasyNav doesn't use them.
 
